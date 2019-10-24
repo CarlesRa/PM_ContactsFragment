@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/linDetalle"
+        android:id="@+id/lstDetalle"
         android:layout_width="409dp"
         android:layout_height="400dp"
         android:orientation="vertical"

@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".DetalleActivity">
 
     <fragment
         android:id="@+id/frgListado"
-        android:name="com.carlesramos.contactsfragment.fragments.FragmentListado"
+        android:name="com.carlesramos.contactsfragment.fragments.FragmentDetalle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>

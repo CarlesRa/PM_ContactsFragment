@@ -12,8 +12,11 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.carlesramos.contactsfragment.R;
+import com.carlesramos.contactsfragment.interficies.IContacteListener;
 
 public class FragmentListado extends Fragment {
+
+    private IContacteListener listener;
     private ListView rvListado;
     @Nullable
     @Override
@@ -24,7 +27,11 @@ public class FragmentListado extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        rvListado = getView().findViewById(R.id.rvListado);
+        rvListado = getView().findViewById(R.id.lstListado);
 
+    }
+
+    public void setContactesListener(IContacteListener listener){
+        this.listener = listener;
     }
 }
